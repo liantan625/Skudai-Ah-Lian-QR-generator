@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>QR Code Generator</h1>
+
+    <!-- User input -->
+    <input id="qr-input" type="text" placeholder="Enter text or URL…" />
+
+    <!-- Action button -->
+    <button id="qr-btn">Generate</button>
+
+    <!-- Where the QR will appear -->
+    <div id="qr-result"></div>
+
+    <!-- Download link (hidden until we have a code) -->
+    <a id="dl" download="qr-code.png" hidden>Download PNG</a>
+  </div>
+
+  <!-- Tiny QR library (one file, no install) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Simple “card” centred on the page */
+body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+    margin: 0;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    text-align: center;
+  }
+  
+  /* neat spacing */
+  input {
+    width: 100%;
+    padding: .75rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    background: #007bff;
+    color: #fff;
+    transition: background .2s;
+  }
+  button:hover { background: #0056c7; }
+  
+  #qr-result { margin: 1.2rem 0; }
+  a#dl { display: inline-block; margin-top: .8rem; color:#007bff; }
+  
